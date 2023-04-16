@@ -1,16 +1,16 @@
-@import './markdown.css';
-
 html,
 body,
 #app {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #F2F2F2;
+  overflow-x: hidden;
+  color: #262626;
 }
 
-html.dark {
-  background: #121212;
-  color-scheme: dark;
+* {
+  font-size: 16px;
 }
 
 #nprogress {
@@ -21,9 +21,13 @@ html.dark {
   background: rgb(13,148,136);
   opacity: 0.75;
   position: fixed;
-  z-index: 1031;
+  z-index: 1001;
   top: 0;
   left: 0;
   width: 100%;
   height: 2px;
 }
+/* 
+::-webkit-scrollbar {
+  width: 0px;
+} */
