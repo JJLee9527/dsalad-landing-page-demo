@@ -13,11 +13,58 @@ const videoInfo = reactive({
   videoHeight: 0,
 })
 
+/** Navbar */
+const scrolling = ref(false)
+const observer = ref<undefined | IntersectionObserver>()
+const expand = ref(false)
+
+watch(() => expand.value, (value) => {
+  if (value)
+    document.body.style.overflow = 'hidden'
+  else
+    document.body.style.overflow = 'auto'
+})
+
+function initObserver() {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.4,
+  }
+  const elementToObserve = document.querySelector('[data-section="1"]')
+
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting)
+        scrolling.value = false
+      else if (entry.intersectionRatio < 0.4)
+        scrolling.value = true
+    })
+  }, options)
+
+  elementToObserve
+  && observer.value.observe(elementToObserve)
+}
+
+function toggleExpand(value?: boolean) {
+  if (value !== undefined && typeof value === 'boolean') {
+    expand.value = value
+    return
+  }
+
+  expand.value = !expand.value
+}
+
+onMounted(() => {
+  initObserver()
+})
+/** End Navbar */
+
 /** Section 1 */
 const resizeListener = ref<undefined | (() => void)>()
 
 function onResize() {
-  screenInfo.screenWidth = window.innerWidth
+  screenInfo.screenWidth = document.body.clientWidth
   screenInfo.screenHeight = window.innerHeight
   videoInfo.videoWidth = screenInfo.screenWidth * 1.2
   videoInfo.videoHeight = screenInfo.screenHeight * 1
@@ -136,7 +183,6 @@ const activeIndex = ref(0)
 
 function setSwiper(swiper: any) {
   swiperInstance.value = swiper
-  console.log(swiperInstance.value)
 }
 
 function onSlideChange(swiper: any) {
@@ -154,7 +200,29 @@ function nextSlide() {
 </script>
 
 <template>
-  <div>
+  <div id="homepage">
+    <TheSideMenu :active="expand" @close="toggleExpand(false)" />
+    <TheAppbarTop class="fixed left-0 top-0 z-20 w-full" :scrolling="scrolling">
+      <template #left>
+        <img
+          v-show="scrolling"
+          class="w-20 md:w-30"
+          src="/assets/img/navbar_logo.png"
+          alt="logo"
+        >
+      </template>
+      <template #right>
+        <div class="flex items-center gap-11">
+          <button class="rounded-full px-4 py-3 text-sm font-bold leading-4 uppercase text-white" style="background: linear-gradient(90deg, #4EE5EA 3.94%, #26D0A8 94.73%);">
+            Start Your Project
+          </button>
+          <button @click="toggleExpand()">
+            <img v-if="!scrolling" src="/assets/img/triple-stripes.svg" alt="menu btn">
+            <img v-else src="/assets/img/triple-stripes_dark.svg" alt="menu btn">
+          </button>
+        </div>
+      </template>
+    </TheAppbarTop>
     <section
       data-section="1"
       class="relative h-screen overflow-x-hidden"
@@ -182,8 +250,8 @@ function nextSlide() {
         md="px-15"
       >
         <div
-          id="landing-text" class="col-start-3 col-end-9"
-          md="col-start-2 col-end-10"
+          id="landing-text" class="col-start-3 col-end-13"
+          md="col-start-2 col-end-13"
         >
           <div id="landing-logo">
             <img
@@ -192,15 +260,31 @@ function nextSlide() {
               alt="logo"
             >
           </div>
-          <h1 class="text-4xl font-bold leading-[70px] tracking-[9.2px] text-white">
+          <h1
+            class="text-xl font-bold leading-[40px] tracking-[9.2px] text-white"
+            md="text-4xl leading-[70px]"
+          >
             WE CREATE
           </h1>
-          <h1 class="text-4xl font-bold leading-[70px] tracking-[9.2px] text-white">
+          <h1
+            class="text-xl font-bold leading-[40px] tracking-[9.2px] text-white"
+            md="text-4xl leading-[70px]"
+          >
             AMAZING
           </h1>
-          <h1 class="text-4xl font-bold leading-[70px] tracking-[9.2px] text-white">
-            DIGITAL EXPERIENCES
-          </h1>
+          <div class="relative flex items-end">
+            <h1
+              class="effect-text relative z-10 text-xl font-bold leading-[40px] tracking-[9.2px] text-white"
+              md="text-4xl leading-[70px]"
+            >
+              DIGITAL EXPERIENCES
+            </h1>
+            <i
+              class="mark relative left-2 h-2.5 w-2.5 rounded-full bg-[#EE6C8A] -top-3"
+              md="-top-5.5"
+            />
+            <span class="text-underline" />
+          </div>
         </div>
         <div
           id="landing-deco-text"
@@ -256,12 +340,21 @@ function nextSlide() {
     </div>
     <!-- Section 2 -->
     <section
-      data-section="2" class="px-4 py-10"
-      md="pt-32 pb-17 px-24 grid-cols-12"
+      data-section="2" class="px-1/15 py-10"
+      md="pt-32 pb-17 px-1/5 grid-cols-12"
     >
-      <h1 class="col-start-1 col-end-12">
-        ABOUT DIGISALAD
-      </h1>
+      <div class="theme-title mb-8 justify-center" md="mb-16">
+        <h1
+          class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+          md="text-[28px]"
+        >
+          ABOUT DIGISALAD
+        </h1>
+        <i class="mark relative left-5 -top-[6px]" />
+        <div class="deco-underline absolute left-1/2 transform -bottom-4 -translate-x-1/2">
+          <img src="/assets/img/title-underline_long_light.svg" alt="underline">
+        </div>
+      </div>
       <iframe
         class="col-start-1 col-end-12"
         type="text/html"
@@ -270,11 +363,18 @@ function nextSlide() {
         src="https://www.youtube.com/embed/8_4JRK4QkqU"
         frameborder="0"
       />
-      <p class="col-start-1 col-end-12 text-center">
+      <p class="col-start-1 col-end-12 my-8 text-center leading-[28px] tracking-[1px]">
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
       </p>
-      <button class="btn-theme border-none p-8 outline-none">
+      <button
+        class="btn-theme mx-auto p-4 text-xs outline-none -bottom-6 -right-8"
+        md="p-8 text-base -bottom-12 -right-10"
+      >
         VIEW MORE
+        <span
+          class="h-0.5 w-10 bg-white"
+          md="w-17"
+        />
       </button>
     </section>
     <!-- End Section 2 -->
@@ -288,16 +388,27 @@ function nextSlide() {
         class="wrapper grid grid-cols-4 rounded-b-10.25 rounded-l-10.25 bg-white px-4 pb-24 pt-16"
         md="grid-cols-12 px-17"
       >
-        <div class="themed-title col-start-1 col-end-5 md:col-end-13">
-          <h1>AWARDS</h1>
-          <i class="mark" />
+        <div class="theme-title col-span-12 mb-8" md="mb-16 col-start-1 col-end-5">
+          <h1
+            class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+            md="text-[28px] pl-4"
+          >
+            AWARDS
+          </h1>
+          <i class="mark relative left-2.5 -top-[6px]" />
+          <div
+            class="deco-underline absolute left-0 w-40 -bottom-4"
+            md="w-44"
+          >
+            <img src="/assets/img/title-underline.svg" alt="underline">
+          </div>
         </div>
         <p class="col-start-1 col-end-5 md:col-end-5">
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
         </p>
         <div
           id="award-badges" class="grid col-start-1 col-end-5 grid-cols-4"
-          md="col-start-5 col-end-11"
+          md="col-start-6 col-end-12 row-start-1 row-end-3"
         >
           <div class="badge col-span-2">
             <img
@@ -345,11 +456,17 @@ function nextSlide() {
       class="relative z-0 grid grid-cols-4 gap-4 rounded-t-10.25 rounded-rb-10.25 bg-[#26C6D0] pb-40 pt-80 text-white -mb-80"
       md="grid-cols-12 px-15 pb-110 -mb-135"
     >
-      <div class="themed-title col-span-4 flex flex-col items-center md:col-span-12">
-        <h1 class="">
-          OUR INGRADIENTS
+      <div class="theme-title col-span-12 mb-8 justify-center" md="mb-16">
+        <h1
+          class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+          md="text-[28px]"
+        >
+          OUR INGREDIENTS
         </h1>
-        <i class="mark" />
+        <i class="mark relative left-5 -top-[6px]" />
+        <div class="deco-underline absolute left-1/2 transform -bottom-4 -translate-x-1/2">
+          <img src="/assets/img/title-underline_long_dark.svg" alt="underline">
+        </div>
       </div>
       <p
         class="col-start-1 col-end-5 px-4"
@@ -357,6 +474,18 @@ function nextSlide() {
       >
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
       </p>
+      <div class="col-span-12 mt-4" md="mt-8">
+        <button
+          class="btn-theme-2 mx-auto p-4 text-xs uppercase outline-none -bottom-6 -right-8"
+          md="p-8 text-base -bottom-12 -right-10"
+        >
+          our services
+          <span
+            class="ml-2 h-0.5 w-10 bg-white"
+            md="w-17 ml-4"
+          />
+        </button>
+      </div>
       <div
         id="ingredients" class="grid col-start-1 col-end-5 grid-cols-12 mt-12 gap-4 px-4"
         md="col-span-12 px-24 gap-x-12 gap-y-15 mt-21"
@@ -398,11 +527,14 @@ function nextSlide() {
       class="pr-1/10"
     >
       <div
-        class="wrapper relative grid grid-cols-12 gap-5 rounded-b-10.25 rounded-tr-10.25 bg-dark-500 px-1/15 py-12 text-white"
+        class="wrapper relative grid grid-cols-12 gap-5 overflow-hidden rounded-b-10.25 rounded-tr-10.25 px-1/15 py-12 text-white"
         md="py-35 px-1/10"
       >
+        <div class="absolute left-0 top-0 z-0 h-full w-full">
+          <img class="h-full w-full object-cover" src="/assets/img/quote_background.png" alt="quote background">
+        </div>
         <div
-          class="founder col-span-4 flex flex-col items-center"
+          class="founder relative z-10 col-span-4 flex flex-col items-center"
           md="col-span-4"
         >
           <img
@@ -421,7 +553,7 @@ function nextSlide() {
           </p>
         </div>
         <div
-          class="quote col-span-8 pl-6 pt-6"
+          class="quote relative z-10 col-span-8 pl-6 pt-6"
           md="col-span-8 pl-10 pt-10"
         >
           <p
@@ -450,11 +582,20 @@ function nextSlide() {
       class="relative z-0 flex flex-col items-center rounded-t-10.25 rounded-rb-10.25 px-1/15 pt-15"
       md="px-1/8 pt-22"
     >
-      <div class="theme-title mb-8" md="mb-14">
-        <h1 class="text-3xl font-bold uppercase">
+      <div class="theme-title mb-8 justify-center" md="mb-16">
+        <h1
+          class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+          md="text-[28px]"
+        >
           OUR BRAND EXPERIENCE
         </h1>
-        <i class="mark" />
+        <i class="mark relative left-5 -top-[6px]" />
+        <div
+          class="deco-underline absolute left-1/2 transform -bottom-4 -translate-x-1/2"
+          md="w-108"
+        >
+          <img src="/assets/img/title-underline_extra-long_light.svg" alt="underline">
+        </div>
       </div>
       <p
         class="mb-8 text-center"
@@ -597,6 +738,56 @@ function nextSlide() {
   display: flex;
   align-items: center;
   gap: .25rem;
+}
+
+.btn-theme-2 {
+  background: #585880;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.theme-title{
+  position: relative;
+  display: flex;
+  align-items: end;
+  .mark {
+    background: #EE6C8A;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+}
+
+#landing-text {
+  .effect-text {
+    position: relative;
+    z-index: 10;
+    &::after {
+      position: absolute;
+      display: none;
+      z-index: -1;
+      content: '';
+      height: .5rem;
+      width: 100%;
+      bottom: 1.3rem;
+      left: -.4rem;
+      background-color: #26C6D0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #landing-text {
+    .effect-text {
+      &::after {
+        display: block;
+      }
+    }
+  }
 }
 </style>
 

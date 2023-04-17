@@ -6,9 +6,9 @@ const props = defineProps<{
 
 <template>
   <nav
-    class="h-14 flex items-center justify-between px-4"
-    :class="[props.scrolling && 'bg-white']"
-    md="h-25 pl-20 pr-15"
+    class="h-14 flex items-center justify-between px-4 transition-all duration-300 ease-in-out"
+    :class="[props.scrolling ? 'bg-white md:h-20' : 'md:h-25']"
+    md="pl-20 pr-15"
   >
     <div class="left">
       <slot name="left" />
