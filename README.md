@@ -2,6 +2,8 @@
 
 Credit goes to [antfu](https://github.com/antfu) for creating the Vitesse template.
 
+[Demo Page](https://jjlee9527.github.io/dsalad-landing-page-demo/)
+
 ## Development
 
 Install dependencies first
