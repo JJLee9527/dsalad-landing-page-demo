@@ -228,17 +228,17 @@ const ingredients = [
 const projects = [
   {
     title: 'LP CLUB MOBILE APP',
-    img: '/assets/img/project_1.png',
+    img: 'project_1.png',
     desc: 'LP Club is a mobile app that allows users to earn points and redeem rewards by purchasing products from participating merchants.',
   },
   {
     title: 'House Keeper MOBILE APP',
-    img: '/assets/img/project_2.png',
+    img: 'project_2.png',
     desc: 'House Keeper is a mobile app that allows users to earn points and redeem rewards by purchasing products from participating merchants.',
   },
   {
     title: 'Life Planner MOBILE APP',
-    img: '/assets/img/project_3.png',
+    img: 'project_3.png',
     desc: 'Life Planner is a mobile app that allows users to earn points and redeem rewards by purchasing products from participating merchants.',
   },
 ]
@@ -692,7 +692,7 @@ function nextSlide() {
           >
             <div class="background absolute z-0 h-full w-full">
               <img
-                :src="slide.img" alt="slide"
+                :src="imgUrl(slide.img)" alt="slide"
                 class="relative inset-0 z-0 h-full w-full object-cover"
               >
               <div class="backgroun-overlay absolute left-0 top-0 z-10 h-full w-full bg-black bg-opacity-60" style="backdrop-filter: brightness(50%)" />
@@ -706,7 +706,7 @@ function nextSlide() {
                 md="col-span-4"
               >
                 <img
-                  :src="slide.img" alt="slide"
+                  :src="imgUrl(slide.img)" alt="slide"
                   class="absolute inset-0 left-0 top-0 z-0 h-full w-full rounded-7.5 object-cover"
                 >
                 <button
