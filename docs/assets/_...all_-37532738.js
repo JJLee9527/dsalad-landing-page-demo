@@ -1,0 +1,1 @@
+import{f as o,o as t,c as s,i as e}from"./app-2cfe1ed2.js";const c={};function _(a,l){return t(),s("div",null," 404 ")}typeof e=="function"&&e(c);const r=o(c,[["render",_],["__file","/home/jjlee9527/projects/dsalad-test/src/pages/[...all].vue"]]);export{r as default};

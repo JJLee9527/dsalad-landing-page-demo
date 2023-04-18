@@ -1,0 +1,442 @@
+{
+  "\u0000/home/jjlee9527/projects/dsalad-test/node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js?commonjs-module": [
+  ],
+  "\u0000commonjsHelpers.js": [
+  ],
+  "\u0000plugin-vue:export-helper": [
+  ],
+  "\u0000vite/modulepreload-polyfill": [
+  ],
+  "\u0000vite/preload-helper": [
+  ],
+  "../../../../@vite-plugin-pages/generated-pages?id=~pages": [
+  ],
+  "../../../../@vite-plugin-pages/route-block": [
+  ],
+  "../../../../@vite-plugin-pwa/virtual:pwa-register": [
+    "/assets/virtual_pwa-register-c197d34d.js"
+  ],
+  "../../../../@vite-plugin-vue-layouts/generated-layouts": [
+  ],
+  "../../../../__uno.css": [
+  ],
+  "../../../../assets/img/awards_badge.png": [
+  ],
+  "../../../../assets/img/awards_badge@2x.png": [
+  ],
+  "../../../../assets/img/brand-exp_brand-wall.png": [
+  ],
+  "../../../../assets/img/brand-exp_brand-wall@2x.png": [
+  ],
+  "../../../../assets/img/founder.png": [
+  ],
+  "../../../../assets/img/landing_dish_food.png": [
+  ],
+  "../../../../assets/img/landing_dish_food@2x.png": [
+  ],
+  "../../../../assets/img/landing_dish_fork_l.png": [
+  ],
+  "../../../../assets/img/landing_dish_fork_l@2x.png": [
+  ],
+  "../../../../assets/img/landing_dish_knife_r.png": [
+  ],
+  "../../../../assets/img/landing_dish_knife_r@2x.png": [
+  ],
+  "../../../../assets/img/landing_dish_plate.png": [
+  ],
+  "../../../../assets/img/landing_dish_plate@2x.png": [
+  ],
+  "../../../../assets/img/landing_logo.svg": [
+  ],
+  "../../../../assets/img/navbar_logo.png": [
+  ],
+  "../../../../assets/img/quote_background.png": [
+  ],
+  "../../../../assets/img/quote_quotemarks_left.svg": [
+  ],
+  "../../../../assets/img/sidemenu_bg_sm_1.png": [
+  ],
+  "../../../../assets/img/sidemenu_bg_sm_2.png": [
+  ],
+  "../../../../assets/img/sidemenu_bg_sm_3.png": [
+  ],
+  "../../../../assets/img/sidemenu_bg_sm_4.png": [
+  ],
+  "../../../../assets/img/sidemenu_bg_sm_5.png": [
+  ],
+  "../../../../assets/img/sidemenu_close.png": [
+  ],
+  "../../../../assets/img/sidemenu_graph_carrot.png": [
+  ],
+  "../../../../assets/img/sidemenu_graph_cheese.png": [
+  ],
+  "../../../../assets/img/sidemenu_graph_cucumber.png": [
+  ],
+  "../../../../assets/img/sidemenu_graph_leaf.png": [
+  ],
+  "../../../../assets/img/sidemenu_graph_tomato.png": [
+  ],
+  "../../../../assets/img/sidemenu_logo.png": [
+  ],
+  "../../../../assets/img/slide-btn_l.png": [
+  ],
+  "../../../../assets/img/slide-btn_r.png": [
+  ],
+  "../../../../assets/img/title-underline.svg": [
+  ],
+  "../../../../assets/img/title-underline_extra-long_light.svg": [
+  ],
+  "../../../../assets/img/title-underline_long_dark.svg": [
+  ],
+  "../../../../assets/img/title-underline_long_light.svg": [
+  ],
+  "../../../../assets/img/triple-stripes.svg": [
+  ],
+  "../../../../assets/img/triple-stripes_dark.svg": [
+  ],
+  "assets/app-!~{001}~.js-unocss-hash.css": [
+  ],
+  "index.html": [
+  ],
+  "locales/ar.yml": [
+    "/assets/ar-3116e923.js"
+  ],
+  "locales/de.yml": [
+    "/assets/de-ac17cf5a.js"
+  ],
+  "locales/en.yml": [
+    "/assets/en-2ef8769f.js"
+  ],
+  "locales/es.yml": [
+    "/assets/es-44e40f41.js"
+  ],
+  "locales/fr.yml": [
+    "/assets/fr-3deced60.js"
+  ],
+  "locales/id.yml": [
+    "/assets/id-f4fd9e4f.js"
+  ],
+  "locales/it.yml": [
+    "/assets/it-3c0c7e92.js"
+  ],
+  "locales/ja.yml": [
+    "/assets/ja-0025478b.js"
+  ],
+  "locales/ka.yml": [
+    "/assets/ka-4057ec5d.js"
+  ],
+  "locales/ko.yml": [
+    "/assets/ko-8aa88c71.js"
+  ],
+  "locales/pl.yml": [
+    "/assets/pl-0a9960ff.js"
+  ],
+  "locales/pt-BR.yml": [
+    "/assets/pt-BR-df026943.js"
+  ],
+  "locales/ru.yml": [
+    "/assets/ru-afb15a13.js"
+  ],
+  "locales/tr.yml": [
+    "/assets/tr-d2e1ae0a.js"
+  ],
+  "locales/uk.yml": [
+    "/assets/uk-557bb745.js"
+  ],
+  "locales/vi.yml": [
+    "/assets/vi-80491d22.js"
+  ],
+  "locales/zh-CN.yml": [
+    "/assets/zh-CN-253ef87b.js"
+  ],
+  "node_modules/.pnpm/@intlify+core-base@9.2.2/node_modules/@intlify/core-base/dist/core-base.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@intlify+devtools-if@9.2.2/node_modules/@intlify/devtools-if/dist/devtools-if.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@intlify+message-compiler@9.2.2/node_modules/@intlify/message-compiler/dist/message-compiler.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@intlify+shared@9.2.2/node_modules/@intlify/shared/dist/shared.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@intlify+vue-devtools@9.2.2/node_modules/@intlify/vue-devtools/dist/vue-devtools.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@unhead+dom@1.1.25/node_modules/@unhead/dom/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/@unhead+shared@1.1.25/node_modules/@unhead/shared/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/@unhead+vue@1.1.25_vue@3.2.47/node_modules/@unhead/vue/dist/shared/vue.bc44c3fa.mjs": [
+  ],
+  "node_modules/.pnpm/@unocss+reset@0.51.4/node_modules/@unocss/reset/tailwind.css": [
+  ],
+  "node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/const.js": [
+  ],
+  "node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/env.js": [
+  ],
+  "node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/index.js": [
+  ],
+  "node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/proxy.js": [
+  ],
+  "node_modules/.pnpm/@vue+devtools-api@6.5.0/node_modules/@vue/devtools-api/lib/esm/time.js": [
+  ],
+  "node_modules/.pnpm/@vue+reactivity@3.2.47/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@vue+runtime-core@3.2.47/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@vue+runtime-dom@3.2.47/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@vue+shared@3.2.47/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/@vueuse+core@9.13.0_vue@3.2.47/node_modules/@vueuse/core/index.mjs": [
+  ],
+  "node_modules/.pnpm/@vueuse+head@1.1.23_vue@3.2.47/node_modules/@vueuse/head/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/@vueuse+shared@9.13.0_vue@3.2.47/node_modules/@vueuse/shared/index.mjs": [
+  ],
+  "node_modules/.pnpm/gsap@3.11.5/node_modules/gsap/CSSPlugin.js": [
+  ],
+  "node_modules/.pnpm/gsap@3.11.5/node_modules/gsap/gsap-core.js": [
+  ],
+  "node_modules/.pnpm/gsap@3.11.5/node_modules/gsap/index.js": [
+  ],
+  "node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/nprogress@0.2.0/node_modules/nprogress/nprogress.js": [
+  ],
+  "node_modules/.pnpm/pinia@2.0.34_hmuptsblhheur2tugfgucj7gc4/node_modules/pinia/dist/pinia.mjs": [
+  ],
+  "node_modules/.pnpm/ssr-window@4.0.2/node_modules/ssr-window/ssr-window.esm.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/get-changed-params.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/get-params.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/mount-swiper.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/params-list.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/update-on-virtual-data.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/update-swiper.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/components-shared/utils.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/breakpoints/getBreakpoint.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/breakpoints/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/breakpoints/setBreakpoint.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/check-overflow/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/classes/addClasses.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/classes/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/classes/removeClasses.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/core.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/defaults.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events-emitter.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onClick.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onLoad.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onResize.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onScroll.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onTouchEnd.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onTouchMove.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/events/onTouchStart.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/grab-cursor/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/grab-cursor/setGrabCursor.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/grab-cursor/unsetGrabCursor.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/loop/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/loop/loopCreate.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/loop/loopDestroy.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/loop/loopFix.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/moduleExtendParams.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/modules/observer/observer.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/modules/resize/resize.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideNext.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slidePrev.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideReset.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideTo.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideToClickedSlide.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideToClosest.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/slide/slideToLoop.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/transition/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/transition/setTransition.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/transition/transitionEmit.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/transition/transitionEnd.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/transition/transitionStart.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/getTranslate.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/maxTranslate.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/minTranslate.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/setTranslate.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/translate/translateTo.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/index.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateActiveIndex.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateAutoHeight.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateClickedSlide.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateProgress.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateSize.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateSlides.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateSlidesClasses.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateSlidesOffset.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/core/update/updateSlidesProgress.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/modules/controller/controller.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/modules/effect-fade/effect-fade.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/modules/navigation/navigation.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/modules/navigation/navigation.min.css": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/create-element-if-not-defined.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/effect-init.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/effect-target.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/effect-virtual-transition-end.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/get-browser.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/get-device.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/get-support.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/process-lazy-preloader.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/shared/utils.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/swiper.min.css": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/vue/get-children.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/vue/swiper-slide.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/vue/swiper.js": [
+  ],
+  "node_modules/.pnpm/swiper@9.2.2/node_modules/swiper/vue/virtual.js": [
+  ],
+  "node_modules/.pnpm/unhead@1.1.25/node_modules/unhead/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/vite-ssg@0.22.2_5yp5ffmexyoplwevzih2hx4gpy/node_modules/vite-ssg/dist/index.mjs": [
+  ],
+  "node_modules/.pnpm/vite-ssg@0.22.2_5yp5ffmexyoplwevzih2hx4gpy/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
+  ],
+  "node_modules/.pnpm/vite-ssg@0.22.2_5yp5ffmexyoplwevzih2hx4gpy/node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [
+  ],
+  "node_modules/.pnpm/vue-demi@0.13.11_vue@3.2.47/node_modules/vue-demi/lib/index.mjs": [
+  ],
+  "node_modules/.pnpm/vue-i18n@9.2.2_vue@3.2.47/node_modules/vue-i18n/dist/vue-i18n.runtime.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/vue-router@4.1.6_vue@3.2.47/node_modules/vue-router/dist/vue-router.mjs": [
+  ],
+  "node_modules/.pnpm/vue@3.2.47/node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+  ],
+  "node_modules/.pnpm/workbox-window@6.5.4/node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
+    "/assets/workbox-window.prod.es5-dc90f814.js"
+  ],
+  "src/App.vue": [
+  ],
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/navigation/TheAppbarTop.vue": [
+  ],
+  "src/components/navigation/TheAppbarTop.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/navigation/TheSideMenu.vue": [
+  ],
+  "src/components/navigation/TheSideMenu.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/navigation/TheSideMenu.vue?vue&type=style&index=0&scoped=76f16f87&lang.scss": [
+  ],
+  "src/composables/dark.ts": [
+  ],
+  "src/layouts/404.vue": [
+    "/assets/404-32544fdb.js"
+  ],
+  "src/layouts/404.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/404-32544fdb.js"
+  ],
+  "src/layouts/default.vue": [
+  ],
+  "src/layouts/home.vue": [
+    "/assets/home-a2042202.js"
+  ],
+  "src/main.ts": [
+  ],
+  "src/modules/i18n.ts": [
+  ],
+  "src/modules/nprogress.ts": [
+  ],
+  "src/modules/pinia.ts": [
+  ],
+  "src/modules/pwa.ts": [
+  ],
+  "src/pages/README.md": [
+    "/assets/README-bc87b04c.js"
+  ],
+  "src/pages/[...all].vue": [
+    "/assets/_...all_-37532738.js"
+  ],
+  "src/pages/index.vue": [
+  ],
+  "src/pages/index.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/pages/index.vue?vue&type=style&index=0&scoped=d1d3d0d7&lang.scss": [
+  ],
+  "src/styles/main.css": [
+  ]
+}

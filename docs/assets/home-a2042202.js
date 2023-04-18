@@ -1,0 +1,1 @@
+import{f as o,r as t,o as c,c as r,a as s}from"./app-2cfe1ed2.js";const n={};function a(_,l){const e=t("RouterView");return c(),r("main",null,[s(e)])}const f=o(n,[["render",a],["__file","/home/jjlee9527/projects/dsalad-test/src/layouts/home.vue"]]);export{f as default};
