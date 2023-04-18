@@ -24,8 +24,8 @@ export default defineConfig({
     },
   },
 
-  // base: process.env.NODE_ENV === 'production' ? '/dsalad-landing-page-demo/' : '/',
-  base: '/dsalad-landing-page-demo/',
+  base: process.env.NODE_ENV === 'production' ? '/dsalad-landing-page-demo/' : '/',
+  // base: '/dsalad-landing-page-demo/',
 
   plugins: [
     VueMacros({

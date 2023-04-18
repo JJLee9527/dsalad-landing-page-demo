@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
+function imgUrl(img: string) {
+  return `${import.meta.env.BASE_URL}assets/img/${img}`
+}
 const screenInfo = reactive({
   screenWidth: 0,
   screenHeight: 0,
@@ -556,14 +559,14 @@ function nextSlide() {
       >
         <div v-for="item, iid in ingredients" :key="`item-${iid}`" class="item col-span-6 flex flex-col items-center gap-4 md:col-span-4">
           <img
-            :src="`/assets/img/${item.imgset[0]}`" :alt="item.title" :srcset="`
-            /assets/img/${item.imgset[0]} 1x,
-            /assets/img/${item.imgset[1] || item.imgset[0]} 2x,
-            /assets/img/${item.imgset[0]}
+            :src="imgUrl(item.imgset[0])" :alt="item.title" :srcset="`
+            ${imgUrl(item.imgset[0])} 1x,
+            ${imgUrl(item.imgset[1]) || imgUrl(item.imgset[0])} 2x,
+            ${imgUrl(item.imgset[0])}
           `" class="w-27"
           >
           <div class="mb-3.5 h-10 flex items-center">
-            <h3 class="text-center text-xl font-bold">
+            <h3 class="text-center text-xl font-bold uppercase">
               {{ item.title }}
             </h3>
           </div>
