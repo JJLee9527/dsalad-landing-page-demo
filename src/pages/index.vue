@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import gsap from 'gsap'
 import { Controller, EffectFade, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
@@ -59,6 +60,67 @@ onMounted(() => {
   initObserver()
 })
 /** End Navbar */
+
+/** Scrolling Guide */
+function animateScrollingGuide() {
+  const tl = gsap.timeline()
+  tl.from('#scrolling-guide .dish-plate', {
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    delay: 2,
+    ease: 'power4.out',
+  })
+  tl.from('#scrolling-guide .dish-food', {
+    y: -5,
+    opacity: 0,
+    duration: 1,
+    scale: 0.5,
+    rotate: 90,
+    ease: 'power4.out',
+  })
+  tl.to('#scrolling-guide .dish-fork', {
+    opacity: 1,
+    duration: 1,
+    rotate: 0,
+    delay: -1,
+    ease: 'power4.out',
+  })
+  tl.to('#scrolling-guide .dish-knife', {
+    opacity: 1,
+    duration: 1,
+    rotate: 0,
+    delay: -1,
+    ease: 'power4.out',
+  })
+}
+
+function rotateDishFood() {
+  const scrollY = window.scrollY
+  const dishFood = document.querySelector('#scrolling-guide .dish-food') as HTMLElement
+
+  gsap.to(dishFood, {
+    rotate: scrollY / 4,
+  })
+  gsap.to('#scrolling-guide', {
+    y: -scrollY / 8,
+    opacity: 1 - scrollY / 800,
+  })
+}
+
+onMounted(() => {
+  animateScrollingGuide()
+  window.addEventListener('scroll',
+    rotateDishFood,
+  )
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll',
+    rotateDishFood,
+  )
+})
+/** End Scrolling Guide */
 
 /** Section 1 */
 const resizeListener = ref<undefined | (() => void)>()
@@ -200,7 +262,7 @@ function nextSlide() {
 </script>
 
 <template>
-  <div id="homepage">
+  <div>
     <TheSideMenu :active="expand" @close="toggleExpand(false)" />
     <TheAppbarTop class="fixed left-0 top-0 z-20 w-full" :scrolling="scrolling">
       <template #left>
@@ -223,6 +285,47 @@ function nextSlide() {
         </div>
       </template>
     </TheAppbarTop>
+    <div
+      v-show="!scrolling"
+      id="scrolling-guide"
+      class="fixed left-1/2 z-20 flex flex-col transform items-center gap-6 -bottom-16 -translate-x-1/2 md:gap-7.5"
+    >
+      <div class="dish-container relative">
+        <img
+          class="dish-plate"
+          src="/assets/img/landing_dish_plate.png" alt="plate" srcset="
+          /assets/img/landing_dish_plate@2x.png 2x,
+          /assets/img/landing_dish_plate.png 1x,
+          /assets/img/landing_dish_plate.png
+        "
+        >
+        <img
+          class="dish-food absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          src="/assets/img/landing_dish_food.png" alt="food" srcset="
+          /assets/img/landing_dish_food@2x.png 2x,
+          /assets/img/landing_dish_food.png 1x,
+          /assets/img/landing_dish_food.png
+        "
+        >
+        <img
+          class="dish-fork absolute left-1/2 top-1/2 rotate-45 transform opacity-0 -translate-x-1/2 -translate-y-1/2"
+          src="/assets/img/landing_dish_fork_l.png" alt="fork" srcset="
+          /assets/img/landing_dish_fork_l@2x.png 2x,
+          /assets/img/landing_dish_fork_l.png 1x,
+          /assets/img/landing_dish_fork_l.png
+        "
+        >
+        <img
+          class="dish-knife absolute left-1/2 top-1/2 transform opacity-0 -translate-x-1/2 -translate-y-1/2 -rotate-45"
+          src="/assets/img/landing_dish_knife_r.png" alt="knife" srcset="
+          /assets/img/landing_dish_knife_r@2x.png 2x,
+          /assets/img/landing_dish_knife_r.png 1x,
+          /assets/img/landing_dish_knife_r.png
+        "
+        >
+      </div>
+      <div class="guideline h-32 w-[1px]" />
+    </div>
     <section
       data-section="1"
       class="relative h-screen overflow-x-hidden"
@@ -298,46 +401,7 @@ function nextSlide() {
         </div>
       </div>
     </section>
-    <div
-      id="scrolling-guide"
-      class="fixed left-1/2 z-20 flex flex-col transform items-center gap-6 -bottom-16 -translate-x-1/2 md:gap-7.5"
-    >
-      <div class="dish-container relative">
-        <img
-          class="dish-plate"
-          src="/assets/img/landing_dish_plate.png" alt="plate" srcset="
-          /assets/img/landing_dish_plate@2x.png 2x,
-          /assets/img/landing_dish_plate.png 1x,
-          /assets/img/landing_dish_plate.png
-        "
-        >
-        <img
-          class="dish-food absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          src="/assets/img/landing_dish_food.png" alt="food" srcset="
-          /assets/img/landing_dish_food@2x.png 2x,
-          /assets/img/landing_dish_food.png 1x,
-          /assets/img/landing_dish_food.png
-        "
-        >
-        <img
-          class="dish-fork absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          src="/assets/img/landing_dish_fork_l.png" alt="fork" srcset="
-          /assets/img/landing_dish_fork_l@2x.png 2x,
-          /assets/img/landing_dish_fork_l.png 1x,
-          /assets/img/landing_dish_fork_l.png
-        "
-        >
-        <img
-          class="dish-knife absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          src="/assets/img/landing_dish_knife_r.png" alt="knife" srcset="
-          /assets/img/landing_dish_knife_r@2x.png 2x,
-          /assets/img/landing_dish_knife_r.png 1x,
-          /assets/img/landing_dish_knife_r.png
-        "
-        >
-      </div>
-      <div class="guideline h-32 w-[1px]" />
-    </div>
+
     <!-- Section 2 -->
     <section
       data-section="2" class="px-1/15 py-10"
@@ -539,11 +603,7 @@ function nextSlide() {
         >
           <img
             src="/assets/img/founder.png" alt="founder"
-            class="mb-10 max-w-52 w-4/5 rounded-full" srcset="
-            /assets/img/founder.png 2x,
-            /assets/img/founder.png 1x,
-            /assets/img/founder.png,
-          "
+            class="mb-10 max-w-52 w-4/5 rounded-full"
           >
           <h3 class="mb-2 text-center text-xl font-bold leading-5 uppercase">
             Tony Ng
