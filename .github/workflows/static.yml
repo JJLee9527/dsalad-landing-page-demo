@@ -37,7 +37,4 @@ jobs:
       - name: Build
         run: pnpm install --no-frozen-lockfile && pnpm build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages
-          folder: dist
+        uses: actions/deploy-pages@v2
