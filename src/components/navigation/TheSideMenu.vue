@@ -16,8 +16,8 @@ const emit = defineEmits<{
     xl="px-1/8"
   >
     <img
-      class="absolute left-5 top-4"
-      md="left-1/15 top-10" src="/assets/img/sidemenu_logo.png" alt="logo"
+      class="absolute left-5 top-4 w-1/5"
+      md="left-1/15 top-10 w-1/10" src="/assets/img/sidemenu_logo.png" alt="logo"
     >
     <button
       class="absolute right-1/20 top-4"
@@ -31,14 +31,14 @@ const emit = defineEmits<{
       md="py-1/20"
     >
       <div
-        class="col-span-6 flex flex-col justify-center gap-8"
-        md="col-span-4"
+        class="col-span-6 flex flex-col justify-center gap-4"
+        md="col-span-4 gap-8"
       >
-        <div class="relative max-h-52.5 min-h-45 flex flex-col justify-end rounded-[30px] bg-[#26C6D0] pb-12 pl-1/4">
+        <div class="relative max-h-52.5 min-h-45 flex flex-col justify-end rounded-[30px] bg-[#26C6D0] pb-6 pl-1/4" md="pb-12">
           <div data-block-background>
             <img src="/assets/img/sidemenu_bg_sm_1.png" alt="background">
           </div>
-          <img class="absolute bottom-13 left-2 w-1/5" md="left-2 bottom-12 w-1/5" src="/assets/img/sidemenu_graph_leaf.png" alt="image">
+          <img class="absolute bottom-6 left-2 w-1/5" md="left-2 bottom-12 w-1/5" src="/assets/img/sidemenu_graph_leaf.png" alt="image">
           <h3
             class="text-xs tracking-[1.8px]"
             lg="text-base pb-2"
@@ -53,11 +53,11 @@ const emit = defineEmits<{
             <span class="mark bg-[#EE6C8A]" />
           </h1>
         </div>
-        <div class="relative max-h-80 flex flex-grow flex-col justify-end rounded-[30px] bg-[#F1849D] pb-12 pl-1/4">
+        <div class="relative max-h-80 flex flex-grow flex-col justify-end rounded-[30px] bg-[#F1849D] pb-6 pl-1/4" md="pb-12">
           <div data-block-background>
             <img src="/assets/img/sidemenu_bg_sm_2.png" alt="background">
           </div>
-          <img class="absolute bottom-13 left-2 w-1/6" md="left-2 bottom-12 w-1/5" src="/assets/img/sidemenu_graph_tomato.png" alt="image">
+          <img class="absolute bottom-9 left-2 w-1/6" md="left-2 bottom-12 w-1/5" src="/assets/img/sidemenu_graph_tomato.png" alt="image">
           <h3
             class="text-xs tracking-[1.8px]"
             lg="text-base pb-2"
@@ -74,15 +74,15 @@ const emit = defineEmits<{
         </div>
       </div>
       <div
-        class="col-span-6 flex flex-col justify-center gap-8"
-        md="col-span-4 px-5"
+        class="col-span-6 flex flex-col justify-center gap-4"
+        md="col-span-4 px-5 gap-8"
       >
-        <div class="relative max-h-108 flex flex-grow flex-col justify-end rounded-[30px] bg-[#E6A94E] pb-12 pl-1/10">
+        <div class="relative max-h-108 min-h-32 flex flex-grow flex-col justify-end rounded-[30px] bg-[#E6A94E] pb-6 pl-1/10" md="pb-12">
           <div class="h-full flex flex-col justify-end">
             <div data-block-background>
               <img src="/assets/img/sidemenu_bg_sm_3.png" alt="background">
             </div>
-            <img class="absolute bottom-22 left-1/15 w-1/4" md="left-1/10 bottom-25 w-1/3" src="/assets/img/sidemenu_graph_cheese.png" alt="image">
+            <img class="absolute bottom-16 left-1/15 w-1/4" md="left-1/10 bottom-25 w-1/3" src="/assets/img/sidemenu_graph_cheese.png" alt="image">
             <h3
               class="text-xs tracking-[1.8px]"
               lg="text-base pb-2"
@@ -98,11 +98,11 @@ const emit = defineEmits<{
             </h1>
           </div>
         </div>
-        <div class="relative max-h-72 min-h-45 flex flex-grow flex-col justify-end rounded-[30px] bg-[#26D0A8] pb-12 pl-1/10">
+        <div class="relative max-h-72 min-h-45 flex flex-grow flex-col justify-end rounded-[30px] bg-[#26D0A8] pb-6 pl-1/10" md="pb-12">
           <div data-block-background>
             <img src="/assets/img/sidemenu_bg_sm_4.png" alt="background">
           </div>
-          <img class="absolute bottom-25 left-2 w-1/5" md="left-0 bottom-28 w-1/3" src="/assets/img/sidemenu_graph_cucumber.png" alt="image">
+          <img class="absolute bottom-20 left-2 w-1/5" md="left-0 bottom-28 w-1/3" src="/assets/img/sidemenu_graph_cucumber.png" alt="image">
           <h3
             class="text-xs tracking-[1.8px]"
             lg="text-base pb-2"
@@ -119,14 +119,14 @@ const emit = defineEmits<{
         </div>
       </div>
       <div
-        class="col-span-6 flex flex-col justify-center gap-8"
-        md="col-span-4"
+        class="col-span-6 flex flex-col justify-center gap-4"
+        md="col-span-4 gap-8"
       >
-        <div class="relative max-h-80 flex flex-grow flex-col justify-end rounded-[30px] bg-[#585880] pb-12 pl-1/10">
+        <div class="relative max-h-80 min-h-32 flex flex-grow flex-col justify-end rounded-[30px] bg-[#585880] pb-6 pl-1/10" md="pb-12">
           <div data-block-background>
             <img src="/assets/img/sidemenu_bg_sm_5.png" alt="background">
           </div>
-          <img class="absolute bottom-25 left-1/15 w-1/8" md="left-1/20 bottom-30 w-1/5" src="/assets/img/sidemenu_graph_carrot.png" alt="image">
+          <img class="absolute bottom-20 left-1/15 w-1/8" md="left-1/20 bottom-30 w-1/5" src="/assets/img/sidemenu_graph_carrot.png" alt="image">
           <h3
             class="text-xs tracking-[1.8px]"
             lg="text-base pb-2"
@@ -141,7 +141,7 @@ const emit = defineEmits<{
             <span class="mark bg-[#EE6C8A]" />
           </h1>
         </div>
-        <div class="relative max-h-52.5 min-h-45 flex flex-col justify-end rounded-[30px] bg-white pb-12 pl-1/10">
+        <div class="relative max-h-52.5 min-h-30 flex flex-col justify-end rounded-[30px] bg-white pb-6 pl-1/10" md="pb-12">
           <h3
             class="text-xs tracking-[1.8px] text-[#262626]"
             lg="text-base pb-2"

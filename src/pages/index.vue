@@ -277,7 +277,10 @@ function nextSlide() {
         >
       </template>
       <template #right>
-        <div class="flex items-center gap-11">
+        <div
+          class="flex items-center gap-6"
+          md="gap-11"
+        >
           <button class="rounded-full px-4 py-3 text-sm font-bold leading-4 uppercase text-white" style="background: linear-gradient(90deg, #4EE5EA 3.94%, #26D0A8 94.73%);">
             Start Your Project
           </button>
@@ -361,7 +364,8 @@ function nextSlide() {
         >
           <div id="landing-logo">
             <img
-              class="w-20 md:w-50"
+              class="mb-5 w-30"
+              md="w-50 mb-0"
               src="/assets/img/landing_logo.svg"
               alt="logo"
             >
@@ -422,14 +426,13 @@ function nextSlide() {
           <img src="/assets/img/title-underline_long_light.svg" alt="underline">
         </div>
       </div>
-      <iframe
-        class="col-start-1 col-end-12"
-        type="text/html"
-        width="640"
-        height="480"
-        src="https://www.youtube.com/embed/8_4JRK4QkqU"
-        frameborder="0"
-      />
+      <div class="youtube-container relative col-start-1 col-end-12 h-0 pt-2/3">
+        <iframe
+          type="text/html"
+          src="https://www.youtube.com/embed/8_4JRK4QkqU"
+          frameborder="0"
+        />
+      </div>
       <p class="col-start-1 col-end-12 my-8 text-center leading-[28px] tracking-[1px]">
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
       </p>
@@ -455,22 +458,25 @@ function nextSlide() {
         class="wrapper grid grid-cols-4 rounded-b-10.25 rounded-l-10.25 bg-white px-4 pb-24 pt-16"
         md="grid-cols-12 px-17"
       >
-        <div class="theme-title col-span-12 mb-8" md="mb-16 col-start-1 col-end-5">
+        <div class="theme-title col-span-12 mb-8 justify-center" md="mb-16 col-start-1 col-end-5 justify-start">
           <h1
-            class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+            class="text-2xl font-bold tracking-[3.5px] uppercase"
             md="text-[28px] pl-4"
           >
             AWARDS
           </h1>
           <i class="mark relative left-2.5 -top-[6px]" />
           <div
-            class="deco-underline absolute left-0 w-40 -bottom-4"
-            md="w-44"
+            class="deco-underline absolute left-1/2 w-40 transform -bottom-4 -translate-x-1/2"
+            md="w-44 left-0 translate-x-0"
           >
             <img src="/assets/img/title-underline.svg" alt="underline">
           </div>
         </div>
-        <p class="col-start-1 col-end-5 md:col-end-5">
+        <p
+          class="col-start-1 col-end-5 px-1/20"
+          md="px-0"
+        >
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc.
         </p>
         <div
@@ -520,8 +526,8 @@ function nextSlide() {
     <!-- Section 4 -->
     <section
       data-section="4"
-      class="relative z-0 grid grid-cols-4 gap-4 rounded-t-10.25 rounded-rb-10.25 bg-[#26C6D0] pb-40 pt-80 text-white -mb-80"
-      md="grid-cols-12 px-15 pb-110 -mb-135"
+      class="relative z-0 grid grid-cols-12 gap-4 rounded-t-10.25 rounded-rb-10.25 bg-[#26C6D0] pb-40 pt-80 text-white -mb-60"
+      md="px-15 pb-110 -mb-135"
     >
       <div class="theme-title col-span-12 mb-8 justify-center" md="mb-16">
         <h1
@@ -536,8 +542,8 @@ function nextSlide() {
         </div>
       </div>
       <p
-        class="col-start-1 col-end-5 px-4"
-        md="col-start-2 col-end-12 px-10"
+        class="col-start-2 col-end-12 px-4 text-center"
+        md="px-10"
       >
         Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
       </p>
@@ -554,7 +560,7 @@ function nextSlide() {
         </button>
       </div>
       <div
-        id="ingredients" class="grid col-start-1 col-end-5 grid-cols-12 mt-12 gap-4 px-4"
+        id="ingredients" class="grid col-span-12 grid-cols-12 mt-12 gap-x-4 gap-y-8 px-4"
         md="col-span-12 px-24 gap-x-12 gap-y-15 mt-21"
       >
         <div v-for="item, iid in ingredients" :key="`item-${iid}`" class="item col-span-6 flex flex-col items-center gap-4 md:col-span-4">
@@ -565,12 +571,21 @@ function nextSlide() {
             ${imgUrl(item.imgset[0])}
           `" class="w-27"
           >
-          <div class="mb-3.5 h-10 flex items-center">
-            <h3 class="text-center text-xl font-bold uppercase">
+          <div
+            class="mb-1 h-10 flex items-center"
+            md="mb-3.5"
+          >
+            <h3
+              class="text-center text-lg font-bold uppercase"
+              md="text-xl"
+            >
               {{ item.title }}
             </h3>
           </div>
-          <p class="line-clamp-5 h-35 w-full overflow-hidden text-center font-normal leading-7 tracking-[1px]">
+          <p
+            class="line-clamp-5 h-35 w-full overflow-hidden text-center text-sm font-normal leading-5 tracking-[1px]"
+            md="text-base leading-7"
+          >
             {{ item.desc }}
           </p>
           <button
@@ -601,27 +616,31 @@ function nextSlide() {
           <img class="h-full w-full object-cover" src="/assets/img/quote_background.png" alt="quote background">
         </div>
         <div
-          class="founder relative z-10 col-span-4 flex flex-col items-center"
+          class="founder relative z-10 col-start-3 col-end-11 flex flex-col items-center"
           md="col-span-4"
         >
           <img
             src="/assets/img/founder.png" alt="founder"
-            class="mb-10 max-w-52 w-4/5 rounded-full"
+            class="mb-5 max-w-52 w-4/5 rounded-full"
+            md="mb-6"
           >
           <h3 class="mb-2 text-center text-xl font-bold leading-5 uppercase">
             Tony Ng
           </h3>
-          <p class="text-center tracking-[2px] italic">
+          <p
+            class="text-center text-sm tracking-[2px] italic"
+            md="text-base"
+          >
             Founder & Creative Director
           </p>
         </div>
         <div
-          class="quote relative z-10 col-span-8 pl-6 pt-6"
+          class="quote relative z-10 col-span-12 pl-6 pt-6"
           md="col-span-8 pl-10 pt-10"
         >
           <p
-            class="text-lg font-normal leading-8 tracking-[2px]"
-            md="leading-12 text-[22px]"
+            class="text-sm font-normal leading-8 tracking-[1px]"
+            md="leading-12 text-[22px] text-lg tracking-[2px]"
           >
             A great digital work isn’t about designing beautiful pages purely. It is about context - how do we deliver the
             <span
@@ -631,8 +650,8 @@ function nextSlide() {
           </p>
         </div>
         <div
-          class="quote-mark absolute left-3/5 top-8 w-10"
-          md="top-20 w-22.5"
+          class="quote-mark absolute left-1/8 top-72 w-10"
+          md="top-20 w-22.5 left-3/5"
         >
           <img src="/assets/img/quote_quotemarks_left.svg" alt="quote-mark">
         </div>
@@ -647,12 +666,12 @@ function nextSlide() {
     >
       <div class="theme-title mb-8 justify-center" md="mb-16">
         <h1
-          class="col-start-1 col-end-12 text-2xl font-bold tracking-[3.5px] uppercase"
+          class="text-center text-2xl font-bold tracking-[3.5px] uppercase"
           md="text-[28px]"
         >
           OUR BRAND EXPERIENCE
         </h1>
-        <i class="mark relative left-5 -top-[6px]" />
+        <i class="mark relative hidden" sm="block left-5" md="left-5 -top-[6px]" />
         <div
           class="deco-underline absolute left-1/2 transform -bottom-4 -translate-x-1/2"
           md="w-108"
@@ -721,18 +740,21 @@ function nextSlide() {
                 </button>
               </div>
               <div
-                class="col-start-2 col-end-9 pl-8 pt-12 text-white"
+                class="col-start-1 col-end-10 pl-8 pt-12 text-white"
                 md="pl-12 col-span-5 pt-0"
               >
-                <p class="mb-5 font-bold leading-4 uppercase">
+                <p
+                  class="mb-5 text-sm font-bold leading-4 uppercase"
+                  md="text-base"
+                >
                   HIGHLIGHTED SHOWCASE
                 </p>
                 <h2 class="mb-10 text-4xl font-bold leading-10 uppercase">
                   {{ slide.title }}
                 </h2>
                 <p
-                  class="text-lg font-normal leading-6 tracking-[1px]"
-                  md="pr-1/10"
+                  class="text-base font-normal leading-5 tracking-[1px]"
+                  md="pr-1/10 text-lg leading-6"
                 >
                   {{ slide.desc }}
                 </p>
@@ -818,7 +840,6 @@ function nextSlide() {
   align-items: end;
   .mark {
     background: #EE6C8A;
-    display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -850,6 +871,16 @@ function nextSlide() {
         display: block;
       }
     }
+  }
+}
+
+[data-section="2"] .youtube-container{
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 </style>
